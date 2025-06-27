@@ -1,0 +1,41 @@
+.why-choose-us {
+  padding: 100px 20px;
+  background-color: #f0f4ff;
+  text-align: center;
+}
+
+.section-title {
+  font-size: 2.5rem;
+  color: #0B3D91;
+  margin-bottom: 40px;
+}
+
+.reasons-grid {
+  display: grid;
+  gap: 30px;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.reason-card {
+  background-color: #ffffff;
+  padding: 25px 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.06);
+  transition: transform 0.3s ease;
+}
+
+.reason-card:hover {
+  transform: scale(1.03);
+}
+
+.reason-card h3 {
+  color: #1F8EF1;
+  margin-bottom: 15px;
+}
+
+.reason-card p {
+  color: #555;
+  font-size: 1rem;
+}
