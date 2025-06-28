@@ -1,12 +1,12 @@
 .why-choose-us {
   padding: 100px 20px;
-  background-color: #f0f4ff;
+  background-color: var(--section-bg); /* Dark background */
   text-align: center;
 }
 
 .section-title {
   font-size: 2.5rem;
-  color: #0B3D91;
+  color: var(--heading-color); /* White or theme primary */
   margin-bottom: 40px;
 }
 
@@ -19,23 +19,24 @@
 }
 
 .reason-card {
-  background-color: #ffffff;
+  background-color: #1e1e1e; /* Dark card background */
   padding: 25px 20px;
   border-radius: 10px;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.06);
-  transition: transform 0.3s ease;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
+  transition: transform 0.3s ease, background 0.3s ease;
 }
 
 .reason-card:hover {
   transform: scale(1.03);
+  background-color: #252525; /* Slight highlight on hover */
 }
 
 .reason-card h3 {
-  color: #1F8EF1;
+  color: var(--primary-color); /* Accent heading */
   margin-bottom: 15px;
 }
 
 .reason-card p {
-  color: #555;
+  color: var(--text-color); /* Light text */
   font-size: 1rem;
 }

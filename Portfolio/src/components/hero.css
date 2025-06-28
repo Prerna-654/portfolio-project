@@ -1,29 +1,48 @@
 .hero {
+  position: relative;
+  background-image: url('../assets/dark-bg.png'); /* ✅ Your background image */
+  background-size: cover;
+  background-position: center;
   min-height: 100vh;
   padding-top: 80px;
   display: flex;
   align-items: center;
   justify-content: center;
-  background: #f9f9f9;
   text-align: center;
+  overflow: hidden;
 }
 
+/* Optional: Add a dark overlay for contrast */
+.hero::before {
+  content: "";
+  position: absolute;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5); /* Dark overlay */
+  z-index: 0;
+}
+
+/* Hero content stays above the overlay */
 .hero-content {
+  position: relative;
+  z-index: 1;
   max-width: 600px;
 }
 
+/* Hero title */
 .hero h1 {
   font-size: 3rem;
-  color: #0B3D91;
+  color: #ffffff; /* White text for dark background */
   margin-bottom: 20px;
 }
 
+/* Hero subtitle */
 .hero p {
   font-size: 1.2rem;
-  color: #555;
+  color: #dddddd; /* Light gray text */
   margin-bottom: 30px;
 }
 
+/* Hero button */
 .hero-button {
   background-color: #1F8EF1;
   color: white;

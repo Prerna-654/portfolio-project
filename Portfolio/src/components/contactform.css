@@ -1,12 +1,12 @@
 .contact-form {
   padding: 100px 20px;
-  background-color: #ffffff;
+  background-color: var(--section-bg); /* Dark background */
   text-align: center;
 }
 
 .section-title {
   font-size: 2.5rem;
-  color: #0B3D91;
+  color: var(--heading-color); /* White heading */
   margin-bottom: 40px;
 }
 
@@ -23,19 +23,22 @@
   padding: 15px;
   font-size: 1rem;
   border-radius: 8px;
-  border: 1px solid #ccc;
+  background-color: #1e1e1e;         /* Dark input field */
+  border: 1px solid #333;            /* Subtle border */
+  color: var(--text-color);          /* Light text */
   outline: none;
+  transition: border-color 0.3s ease;
 }
 
 .form input:focus,
 .form textarea:focus {
-  border-color: #1F8EF1;
+  border-color: var(--primary-color); /* Accent border on focus */
 }
 
 .form button {
   padding: 12px;
-  background-color: #1F8EF1;
-  color: white;
+  background-color: var(--primary-color);
+  color: var(--button-text);         /* Usually white */
   border: none;
   border-radius: 8px;
   font-weight: bold;
@@ -44,5 +47,5 @@
 }
 
 .form button:hover {
-  background-color: #0B3D91;
+  background-color: var(--accent-color); /* Slightly darker on hover */
 }
